@@ -28,5 +28,5 @@ function livro(nome, ano, autor) {
 }
 
 const livroRetorno = livro("Senhor dos Anéis", 1954, "J. R. R. Tolken");
-console.log(livroRetorno.frase);
+console.log(livroRetorno.frase); 
 
