@@ -14,4 +14,4 @@ if(href === url) {
     console.log(href);
 }
 
-links .forEach(ativarLink);
+links .forEach(ativarLink); 
