@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>País</title>
+</head>
+<body>
+    <h1>
+        Sistema de Países
+    </h1>
+    Em que país você mora? <input type="text" name="txtpais" id="txtpais">
+    <input type="button" value="Verificar" onclick="responder()">
+    <div id="res">
+
+    </div>
+
+    <script>
+        function responder() {
+            var txtp = document.querySelector('#txtpais')
+            var res = document.querySelector('#res')
+            var pais = txtp.value
+
+            res.innerHTML = `Você mora aqui: ${pais}`
+            if (pais == Brasil) {
+                res.innerHTML += `Você é Br, papai!`
+            }
+        } 
+    </script>
+</body>
+</html>
